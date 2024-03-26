@@ -1,0 +1,17 @@
+[Unit]
+Description=ssh forward service unit file.
+Wants=networking.service
+After=networking.service
+
+[Service]
+ExecStart=/bin/bash /usr/sbin/ssh-fwd.sh
+#Type=notify
+RuntimeMaxSec=604800
+#WatchdogSec=10
+Restart=always
+StartLimitInterval=1000
+StartLimitBurst=0
+
+[Install]
+WantedBy=multi-user.target
+
