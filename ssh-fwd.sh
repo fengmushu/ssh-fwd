@@ -10,4 +10,4 @@ ssh -o CheckHostIP=yes \
 	-o VerifyHostKeyDNS=yes \
 	-o ExitOnForwardFailure=yes \
 	-o BatchMode=yes \
-	-g -nN -R *:12522:localhost:22 -p 12580 ken@117.48.195.14
+	-g -nN -R *:12522:localhost:22 -p 12580 ken@xumiao.cc
